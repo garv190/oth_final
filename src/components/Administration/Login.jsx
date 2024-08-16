@@ -51,7 +51,7 @@ const Login = () => {
 
   useEffect(() => {
     axios.get("http://localhost:3001/Login").then((response) => {
-      if (response.data.loggedIn == true) {
+      if (response.data.loggedIn === true) {
         setLoginError(response.data.user);
       }
     }).catch((error) => {
