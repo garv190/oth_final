@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState,useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Countdown.css';
 
@@ -21,15 +21,17 @@ const Countdown = () => {
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
-  let interval;
+  const intervalRef = useRef(null); // Change 1: Use useRef to store the interval ID
+
+  // let interval;
 
   const deadline = "August 19, 2024";
 
   const getTime = () => {
     const time = Date.parse(deadline) - Date.now();
-    if (time <= 0) { // Check if timer has ended
-      clearInterval(interval); // Stop the interval
-      navigate('/QuestionPage'); // Navigate to QuestionPage component
+    if (time <= 0) {
+      clearInterval(intervalRef.current); // Change 3: Stop the interval using intervalRef.current
+      navigate('/QuestionPage');
     } else {
       setDays(Math.floor(time / (1000 * 60 * 60 * 24)));
       setHours(Math.floor((time / (1000 * 60 * 60)) % 24));
@@ -39,9 +41,10 @@ const Countdown = () => {
   };
 
   useEffect(() => {
-    interval = setInterval(() => getTime(), 1000);
-    return () => clearInterval(interval);
-  }, []);
+    intervalRef.current = setInterval(getTime, 1000); // Change 2: Store the interval ID in intervalRef.current
+    return () => clearInterval(intervalRef.current); // Change 3: Cleanup the interval on component unmount
+  }, );
+
 
   return (
     <div className='c'>

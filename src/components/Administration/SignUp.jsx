@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from 'react';
 import axios from 'axios';
-import { Link,useNavigate } from 'react-router-dom'; // Import Link from react-router-dom
+import { useNavigate } from 'react-router-dom'; // Import Link from react-router-dom
 import './SignUp.css';
 
 const SignUp = () => {
@@ -52,7 +52,7 @@ const SignUp = () => {
 
   return (
     <div className="signup-container">
-      <h2 className="signup-title"></h2>
+      <h2 className="signup-title" aria-hidden="true"></h2>
       <form action="/SignUp" method="POST" className="signup-form" onSubmit={handleSubmit}>
         <div className="input-group">
           <label htmlFor="username">Username:</label>
