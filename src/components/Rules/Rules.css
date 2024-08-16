@@ -1,0 +1,32 @@
+body {
+    background-image: url("../Images/space6.jpg");
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+
+ 
+
+
+.r{
+    font-size: 5em;
+   text-decoration: underline;
+    text-align: center;
+    color: goldenrod;
+}
+.u{
+    color: rgb(49, 179, 179);
+    font-size: 2em;
+}
+
+
+
+/* .u li {
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .u li.visible {
+    opacity: 1;
+  }
+   */

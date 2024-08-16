@@ -1,0 +1,46 @@
+{
+  "g":{
+
+"pages":[
+  {
+    "url":"/",
+    "info":"Home"
+  },
+  {
+    "url":"/Countdown",
+    "info":"Questions"
+  },
+  {
+    "url":"/Leaderboard",
+    "info":"Leaderboard"
+  },
+
+  {
+    "url":"/Rules",
+    "info":"Guidelines"
+  }
+
+],
+
+
+
+
+"settings":[
+
+  {
+    "url":"/SignUp",
+    "info":"Register"
+  },
+  {
+    "url":"/Login",
+    "info":"Login"
+  }
+ 
+]
+
+  }
+
+}
+
+
+  

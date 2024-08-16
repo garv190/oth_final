@@ -1,0 +1,91 @@
+/* Adjust the question container to be centered and positioned below */
+.container {
+    position: relative;
+}
+
+.question-container {
+    background-color: rgba(24, 23, 23, 0.8); /* Dark text color */
+    padding: 20px 60px; /* Increase padding for space */
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    /* left: 50%; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 50px auto 0; 
+    width: 60%;
+    max-width: 800px; 
+}
+
+/* Keep the question number part fixed */
+.question-number {
+    position: fixed;
+    top: 50px; /* Adjust the top position as needed */
+    left: 50px; /* Adjust the left position as needed */
+    font-size: 62px;
+    color: #444; /* Darker title color */
+}
+
+/* Increase margin for space */
+.question-title {
+    font-size: 40px;
+    margin-bottom: 20px; 
+    color: #fb6731; /* Darker title color */
+}
+
+/* Increase margin for space */
+.question-text {
+    font-size: 18px;
+    margin-bottom: 30px; 
+}
+
+/* Increase input box size */
+.answer-input {
+    width: 50%; /* Make input box larger */
+    padding: 12px; /* Increase padding */
+    margin-bottom: 20px; /* Increase margin for space */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 30px;
+    background-color: #070606; /* Light gray background */
+    color: #e8dcdc; /* Dark text color */
+}
+
+.question-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Position submit button below the input box */
+.submit-button {
+    width: 20%; /* Make button wider */
+    margin-top: 20px; /* Center horizontally */
+    text-align: center; /* Align text center */
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #000000, #525050); 
+    color: #fff;
+    font-size: 1.0vw; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background: linear-gradient(to right, #FF6347, #FFA07A);/* Darker blue on hover */
+}
+
+/* Add space between the feedback message and the submit button */
+.feedback-message {
+    font-size: 16px;
+    margin-top: 20px; /* Increase margin for space */
+    color: #777; /* Lighter text color */
+}

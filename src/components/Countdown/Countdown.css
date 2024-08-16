@@ -1,0 +1,63 @@
+.c {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .c h1 {
+    font-size: 48px;
+    font-weight: 600;
+    background: linear-gradient(to right, #ff3753, #ff7f00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+    animation: glow 2s linear infinite alternate; /* Add glow animation */
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #ff3753, 0 0 20px #ff7f00;
+    }
+    to {
+      text-shadow: 0 0 20px #ff3753, 0 0 30px #ff7f00;
+    }
+  }
+  
+  .l {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .l div {
+    margin: 0 10px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+    animation: pulse 1.5s ease-in-out infinite alternate; /* Add pulse animation */
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+  
+  .l div p {
+    font-size: 48px;
+    margin-bottom: 5px;
+    color: #ff7f00;
+  }
+  
+  .l div span {
+    font-size: 20px;
+    color: #fff;
+  }
